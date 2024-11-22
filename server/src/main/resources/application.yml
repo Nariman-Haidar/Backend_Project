@@ -1,0 +1,28 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/queue
+    username: postgres
+    password: postgres
+  flyway:
+    url: jdbc:postgresql://localhost:5432/queue
+    user: postgres
+    password: postgres
+   # logging:
+      #level:
+       # org.hibernate.SQL: debug
+        #org.hibernate.type.descriptor.sql.BasicBinder: trace
+
+  logging:
+    level:
+       org.springframework.data.r2dbc: DEBUG
+    #server:
+    #  port: 8081
+
+  #jwt:
+   # secret: secret-key
+   # expirationMs: 3600000
+
+    spring.r2dbc:
+      properties:
+        r2dbc.debug: true
+    logging.level.io.r2dbc: DEBUG

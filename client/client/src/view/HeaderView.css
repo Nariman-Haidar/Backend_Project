@@ -1,0 +1,11 @@
+.header-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .header-list li {
+    display: inline;
+  }
+  
